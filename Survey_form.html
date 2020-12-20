@@ -18,27 +18,34 @@
         <form id="survey-form">
             <table class="form-table">
                 <tr>
-                    <label id="name-name" for="name">Name </label>
-                    <td><input type="text" id="name" maxlength="10" minlength="4" placeholder="Enter your name" required /></td>
+                    <label id="name-name" for="name"></label>
+                    <td><input type="text" id="name" maxlength="255" minlength="1" placeholder="Enter your name"
+                            required /></td>
                 </tr>
                 <tr>
-                    <label id="name-email" for="email">Email </label>
-                    <td><input type="email" id="email" required placeholder="Enter your email" required /></td>
+                    <label id="name-email" for="email"></label>
+                    <td><input type="email" id="email" placeholder="Enter your email" required /></td>
                 </tr>
                 <tr>
-                    <label id="number-label" for="number">Age (Optional) </label>
-                    <td><input type="number" id="number" name="age" min="1" max="99" required placeholder="Age" required /></td>
+                    <label id="number-label" for="number"></label>
+                    <td><input type="number" id="number" name="age" min="1" max="99" placeholder="Age(Optional)"
+                            required /></td>
                 </tr>
-
                 <tr>
                     <td colspan="2"><br /><input type="submit" value="SUBMIT" id="submit"></td>
                 </tr>
-
-
-
-            </table>
         </form>
 
+      <!--  <p id="description">Which personal qualities best describe yourself?</p>
+        <select name="dropdown" id="role" required>
+            <option desabled selected value>Select quality</option>
+            <option value="egocentric">Egocentric</option>
+            <option value="ignorant">Sgnorant</option>
+            <option value="sencetive">Sencetive</option>
+            <option value="reclusive">Reclusive</option>
+        </select>-->
+
+        </table>
     </div>
 </body>
 
