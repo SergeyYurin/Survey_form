@@ -12,57 +12,60 @@
 
 
 <body>
-        <header class="header">
-            <h1 id="title">My test survey form</h1>
-            <p id="description">Please take this survey and answer the questions</p>
-        </header>
+    <header class="header">
+        <h1 id="title">My test survey form</h1>
+        <p id="description">Please take this survey and answer the questions</p>
+    </header>
 
-        <form id="survey-form">
-            <div class="form-table">
-                <div class="position1">
-                    <label id="name-name" for="name">Name</label>
-                    <div><input type="text" id="name" maxlength="255" minlength="1" placeholder="Enter your name"
-                            required /></div>
-                </div>
-                <div class="position2">
-                    <label id="name-email" for="email">Email</label>
-                    <div><input type="email" id="email" placeholder="Enter your email" required /></div>
-                </div>
-                <div class="position3">
-                    <label id="number-label" for="number">Age</label>
-                    <div><input type="number" id="number" name="age" min="1" max="99" placeholder="Age(Optional)"
-                            required /></div>
-                </div>
-                <div class="position4">
-                    <p>Which one from personal qualities in this list best describe yourself?</p>
-                    <select name="dropdown" id="role" required>
-                        <option desabled selected value>Select quality</option>
-                        <option value="egocentric">Egocentric</option>
-                        <option value="ignorant">Sgnorant</option>
-                        <option value="sencetive">Sencetive</option>
-                        <option value="reclusive">Reclusive</option>
-                    </select>
-                </div>
-                <div class="position5">
-                    <p>What dog's breed would you like to own?</p>
-                    <label for="pomeranian">
-                        <input id="pomeranian" value="pomeranian" type="radio" name="pomeranian-labrador-shepard">Pomeranian
-                    </label>
-                    <label for="labrador">
-                        <input id="labrador" value="labrador" type="radio" name="pomeranian-labrador-shepard">Labrador
-                    </label>
-                    <label for="shepard">
-                        <input id="labrador" value="labrador" type="radio" name="pomeranian-labrador-shepard">Shepard
-                    </label>
-                    <label for="husky">
-                        <input id="labrador" value="labrador" type="radio" name="pomeranian-labrador-shepard-husky">Husky
-                    </label>
-                </div>
-                <div class="position6">
-                    <button class="btn" id="submit">SUBMIT</button>
+    <form id="survey-form">
+        <div class="form-table">
+            <div class="position1">
+                <label id="name-name" for="name">Name</label>
+                <div><input type="text" id="name" maxlength="255" minlength="1" placeholder="Enter your name"
+                        required /></div>
+            </div>
+            <div class="position2">
+                <label id="name-email" for="email">Email</label>
+                <div><input type="email" id="email" placeholder="Enter your email" required /></div>
+            </div>
+            <div class="position3">
+                <label id="number-label" for="number">Age</label>
+                <div><input type="number" id="number" name="age" min="1" max="99" placeholder="Age(Optional)"
+                        required /></div>
+            </div>
+            <div class="position4">
+                <p>Which one from personal qualities in this list best describe yourself?</p>
+                <select name="dropdown" id="role" required>
+                    <option desabled selected value>Select quality</option>
+                    <option value="egocentric">Egocentric</option>
+                    <option value="ignorant">Sgnorant</option>
+                    <option value="sencetive">Sencetive</option>
+                    <option value="reclusive">Reclusive</option>
+                </select>
+            </div>
+            <div class="position5">
+                <p>What dog's breed would you like to own?</p>
+                <div class="alignRadioButtons">
+
+                    <input type="radio" class="radio" id="dog1" name="dog" value="pomeranian" />
+                    <label for="dog1">Pomeranian</label>
+
+                    <input type="radio" class="radio" id="dog2" name="dog" value="shepard" />
+                    <label for="dog2">Shepard</label>
+
+                    <input type="radio" class="radio" id="dog3" name="dog" value="labrador" />
+                    <label for="dog3">Labrador</label>
+
+                  <!--  <input type="radio" class="radio" id="dog4" name="dog" value="buldog" />
+                    <label for="dog4">Buldog</label>-->
+
                 </div>
             </div>
-        </form>
+            <div class="position6">
+                <button class="btn" id="submit">SUBMIT</button>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
