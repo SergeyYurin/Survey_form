@@ -20,16 +20,16 @@
     <form id="survey-form">
         <div class="form-table">
             <div class="position1">
-                <label id="name-label" for="name">Name</label>
+                <label id="name-label" for="name">Name*</label>
                 <div><input type="text" id="name" maxlength="255" minlength="1" placeholder="Enter your name"
                         required /></div>
             </div>
             <div class="position2">
-                <label id="email-label" for="email">Email</label>
+                <label id="email-label" for="email">Email*</label>
                 <div><input type="email" id="email" placeholder="Enter your email" required /></div>
             </div>
             <div class="position3">
-                <label id="number-label" for="number">Age</label>
+                <label id="number-label" for="number">Age*</label>
                 <div><input type="number" id="number" name="age" min="1" max="99" placeholder="Age(Optional)"
                         required /></div>
             </div>
@@ -38,7 +38,7 @@
                 <select name="dropdown" id="dropdown" required>
                     <option desabled selected value>Select quality</option>
                     <option value="egocentric">Egocentric</option>
-                    <option value="ignorant">Sgnorant</option>
+                    <option value="ignorant">Ignorant</option>
                     <option value="sencetive">Sencetive</option>
                     <option value="reclusive">Reclusive</option>
                 </select>
@@ -61,9 +61,9 @@
 
                 </div>
             </div>
-
+        
             <div class="position6">
-                <p>Choose cities you would like to visit in your life</p>
+                <p>Choose cities you would like to visit:</p>
                 <div class="alignCheckBoxes">
             
                     <input type="checkbox" class="checkbox" id="miami" name="city" value="miami" />
@@ -80,12 +80,10 @@
             
                 </div>
             </div>
-
+         
             <div class="position7">
-                <label for="textarea">Tell me about yourself</label>
-                
-                <textarea id="textarea" name="textarea" rows="4" cols="50">
-                
+                <p>Tell me about yourself</p>
+                <textarea id="textarea" name="textarea" rows="4" cols="100" required>
                 </textarea>
             </div>
             <div class="position8">
